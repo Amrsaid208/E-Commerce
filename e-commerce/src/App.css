@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+}
+.products {
+  /* padding: 0 2rem; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-gap: 3rem; */
+}
+@media only screen and (max-width: 1024px) {
+  .products {
+    /* padding: 0 2rem; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 3rem; */
+  }
+}
+@media only screen and (max-width: 768px) {
+  .products {
+    /* padding: 0 2rem; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 3rem; */
+  }
+}
+@media only screen and (max-width: 480px) {
+  .products {
+    /* padding: 0 2rem; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-gap: 3rem; */
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.no-items {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 10vw;
+}
+.no-items button {
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .no-items {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .no-items {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    text-align: center;
+  }
+}

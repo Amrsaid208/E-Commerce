@@ -1,0 +1,161 @@
+.header-upper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  height: 32px;
+}
+.header-upper a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.header-upper a:hover {
+  color: red;
+}
+.header-lower {
+  display: flex;
+  align-items: center;
+}
+.header-lower-links {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-lower-links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.header-lower-links a:hover {
+  border-bottom: 1px solid black;
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 590px) {
+  .header-lower-links a {
+    padding: 0 5px;
+  }
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  width: 70px;
+  background-image: url(https://st-adidas-egy.mncdn.com/content/img/site-images/icon-adidas-logo.svg);
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+.desktop-bag {
+  font-size: 2.5rem;
+
+  margin-right: 2rem;
+  transition-duration: 1s;
+}
+.desktop-bag:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+.desktop-header {
+  display: block;
+}
+.mobile-header {
+  display: none;
+}
+
+.bag-part {
+  font-size: 2rem;
+}
+.ham-menu {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 480px) {
+  .desktop-header {
+    display: none;
+  }
+  .mobile-header {
+    /* display: none; */
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .logo {
+    padding: 0;
+    width: 60px;
+  }
+}
+.sidebar {
+  position: absolute;
+  left: 0;
+  transform: translateX(-480px);
+  /* opacity: 0; */
+  transition-duration: 2s;
+  top: 0;
+}
+.menu-logo {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.list-st {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+}
+.list-st ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  line-height: 2.5;
+}
+.list-st li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+.list-st a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: bold;
+}
+.go-right {
+  transition-duration: 500ms;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  z-index: 5;
+}
+a {
+  color: black;
+}

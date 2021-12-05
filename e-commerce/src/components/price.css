@@ -1,0 +1,36 @@
+.price-tot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 10vh; */
+  border-radius: 10px;
+  /* border: 2px solid black; */
+  margin-bottom: 2rem;
+  width: 80%;
+  margin: 1rem auto;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+.price-tot-lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.price-tot button {
+  height: 50%;
+  margin-left: 2rem;
+}
+@media only screen and (max-width: 480px) {
+  .price-tot-lower {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .price-tot button {
+    height: 50%;
+    margin-left: 0;
+  }
+}

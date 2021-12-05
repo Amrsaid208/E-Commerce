@@ -1,0 +1,127 @@
+.checkout-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .checkout-nav {
+    flex-direction: column;
+  }
+}
+.checkout {
+  display: flex;
+  /* flex: 1; */
+}
+.checkout h3 {
+  margin-left: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  color: black;
+  border-left: 2px solid rgb(232 232 245);
+}
+.login {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex: 1; */
+}
+.login button {
+  /* width: 30%; */
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  transition-duration: 0.1s;
+  margin-left: 1.5rem;
+}
+.login button:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+}
+.shipping-header h2,
+.payment-header {
+  background-color: #eee;
+  padding: 1rem 2rem;
+  width: 90vw;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.shipping-form {
+  width: 90%;
+  margin: 2rem auto;
+}
+.shipping-form div {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.shipping-form input {
+  /* flex: 0.4; */
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+.postal input {
+  flex: 0.48;
+}
+.submit-btn {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto !important;
+}
+
+.submit-btn button {
+  padding: 1.25rem 4rem;
+  /* width: 100%; */
+  margin: 1rem auto !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .submit-btn {
+    width: 100%;
+    margin: 0;
+  }
+  .submit-btn button {
+    width: 100%;
+  }
+}
+.payment-form {
+  margin: 2rem auto;
+}
+.payment-form div {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+}
+.payment-form input,
+.contact-info input {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  height: 2rem;
+}
+
+.contact-info div {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.hide {
+  display: none;
+}
+.order-placed {
+  position: absolute;
+  top: 50%;
+  background-color: white;
+  padding: 3rem;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  text-align: center;
+}
